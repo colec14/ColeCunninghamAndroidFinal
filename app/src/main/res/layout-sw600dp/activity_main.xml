@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputIncome"
+        android:layout_width="231dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/inputRent"
+        app:layout_constraintEnd_toEndOf="@+id/inputSavings"
+        app:layout_constraintStart_toStartOf="@+id/textIncome"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/inputInsurance"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="216dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textMisc"
+        app:layout_constraintEnd_toStartOf="@+id/textInsurance"
+        app:layout_constraintStart_toEndOf="@+id/textGroceries"
+        app:layout_constraintTop_toTopOf="@+id/textIncome" />
+
+    <TextView
+        android:id="@+id/textDebt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="9dp"
+        android:text="Debt"
+        app:layout_constraintBottom_toBottomOf="@+id/inputDebt"
+        app:layout_constraintEnd_toStartOf="@+id/inputDebt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputDebt" />
+
+    <EditText
+        android:id="@+id/inputUtilities"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="79dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textMisc"
+        app:layout_constraintTop_toBottomOf="@+id/textSavings" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="794dp"
+        android:layout_marginEnd="126dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputDebt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Notification"
+        app:layout_constraintBottom_toTopOf="@+id/textBudget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputDebt"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="250dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSubmit"
+        app:layout_constraintStart_toEndOf="@+id/textDebt"
+        app:layout_constraintTop_toBottomOf="@+id/textCar" />
+
+    <TextView
+        android:id="@+id/textUtilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="46dp"
+        android:text="Utilities"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inputMisc"
+        app:layout_constraintEnd_toStartOf="@+id/inputMisc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textMisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="87dp"
+        android:text="Misc"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintEnd_toStartOf="@+id/inputUtilities"
+        app:layout_constraintStart_toEndOf="@+id/inputGroceries" />
+
+    <TextView
+        android:id="@+id/textCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="73dp"
+        android:text="Car"
+        app:layout_constraintEnd_toStartOf="@+id/inputGroceries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUtilities" />
+
+    <TextView
+        android:id="@+id/textIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="Income"
+        app:layout_constraintEnd_toEndOf="@+id/textBudget"
+        app:layout_constraintTop_toBottomOf="@+id/textBudget" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="55dp"
+        android:text="Please enter your monthly bills"
+        app:layout_constraintEnd_toEndOf="@+id/inputIncome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputMisc"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="116dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputUtilities"
+        app:layout_constraintEnd_toStartOf="@+id/textSavings"
+        app:layout_constraintStart_toEndOf="@+id/textUtilities"
+        app:layout_constraintTop_toTopOf="@+id/textGroceries" />
+
+    <EditText
+        android:id="@+id/inputCar"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/inputCellPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCellPhone"
+        app:layout_constraintTop_toBottomOf="@+id/inputIncome" />
+
+    <TextView
+        android:id="@+id/textBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="138dp"
+        android:text="Budget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputCellPhone"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="229dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputUtilities"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInsurance"
+        app:layout_constraintTop_toTopOf="@+id/textIncome" />
+
+    <TextView
+        android:id="@+id/textCellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:text="Cell Phone"
+        app:layout_constraintEnd_toStartOf="@+id/inputCar"
+        app:layout_constraintStart_toEndOf="@+id/inputRent"
+        app:layout_constraintTop_toTopOf="@+id/inputCar" />
+
+    <EditText
+        android:id="@+id/inputSavings"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="87dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textMisc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textSavings"
+        app:layout_constraintTop_toBottomOf="@+id/inputInsurance" />
+
+    <TextView
+        android:id="@+id/textSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:text="Savings"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inputSavings"
+        app:layout_constraintEnd_toStartOf="@+id/inputSavings"
+        app:layout_constraintStart_toEndOf="@+id/inputMisc" />
+
+    <TextView
+        android:id="@+id/textRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="65dp"
+        android:text="Rent"
+        app:layout_constraintEnd_toStartOf="@+id/inputRent"
+        app:layout_constraintTop_toTopOf="@+id/inputRent" />
+
+    <TextView
+        android:id="@+id/textInsurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:text="Insurance"
+        app:layout_constraintEnd_toStartOf="@+id/inputCellPhone"
+        app:layout_constraintStart_toEndOf="@+id/inputInsurance"
+        app:layout_constraintTop_toTopOf="@+id/inputCellPhone" />
+
+    <EditText
+        android:id="@+id/inputGroceries"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="106dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textDebt"
+        app:layout_constraintEnd_toStartOf="@+id/textMisc"
+        app:layout_constraintStart_toEndOf="@+id/textCar"
+        app:layout_constraintTop_toTopOf="@+id/inputMisc" />
+
+    <EditText
+        android:id="@+id/inputRent"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="199dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="82dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textGroceries"
+        app:layout_constraintEnd_toStartOf="@+id/textCellPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textIncome" />
+
+    <TextView
+        android:id="@+id/textGroceries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="47dp"
+        android:text="Groceries"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inputInsurance"
+        app:layout_constraintEnd_toStartOf="@+id/inputInsurance"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

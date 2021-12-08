@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillsActivity">
+
+    <TextView
+        android:id="@+id/textBillDebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="9dp"
+        android:text="Debt"
+        app:layout_constraintStart_toStartOf="@+id/textBillCar"
+        app:layout_constraintTop_toBottomOf="@+id/textBillCar" />
+
+    <TextView
+        android:id="@+id/textBillMisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Misc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textBillSavings" />
+
+    <TextView
+        android:id="@+id/textBillSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="4dp"
+        android:text="Savings"
+        app:layout_constraintEnd_toEndOf="@+id/textBillInsurance"
+        app:layout_constraintTop_toBottomOf="@+id/textBillInsurance" />
+
+    <TextView
+        android:id="@+id/textBillGroceries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Groceries"
+        app:layout_constraintStart_toStartOf="@+id/textBillUtilities"
+        app:layout_constraintTop_toBottomOf="@+id/textBillUtilities" />
+
+    <TextView
+        android:id="@+id/textRentPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="22dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/textBillBudget"
+        app:layout_constraintTop_toBottomOf="@+id/textBillBudget" />
+
+    <TextView
+        android:id="@+id/textInsurancePer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textSavingsPer"
+        app:layout_constraintStart_toStartOf="@+id/textSavingsPer" />
+
+    <TextView
+        android:id="@+id/textGroceriesPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textUtilitiesPer"
+        app:layout_constraintTop_toBottomOf="@+id/textUtilitiesPer" />
+
+    <TextView
+        android:id="@+id/textUtilitiesPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textRentPer"
+        app:layout_constraintTop_toBottomOf="@+id/textRentPer" />
+
+    <TextView
+        android:id="@+id/textDebtPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textCarPer"
+        app:layout_constraintTop_toBottomOf="@+id/textCarPer" />
+
+    <TextView
+        android:id="@+id/textSavingsPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textMiscPer"
+        app:layout_constraintStart_toStartOf="@+id/textMiscPer" />
+
+    <TextView
+        android:id="@+id/textMiscPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="29dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textDebtPer"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textCarPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textGroceriesPer"
+        app:layout_constraintTop_toBottomOf="@+id/textGroceriesPer" />
+
+    <TextView
+        android:id="@+id/textCellPhonePer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textInsurancePer"
+        app:layout_constraintStart_toStartOf="@+id/textInsurancePer" />
+
+    <TextView
+        android:id="@+id/textBillCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Car"
+        app:layout_constraintStart_toStartOf="@+id/textBillGroceries"
+        app:layout_constraintTop_toBottomOf="@+id/textBillGroceries" />
+
+    <TextView
+        android:id="@+id/textBillRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="41dp"
+        android:text="Rent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBillCellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="21dp"
+        android:text="Cell Phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBillDebt" />
+
+    <TextView
+        android:id="@+id/textBillInsurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Insurance"
+        app:layout_constraintStart_toStartOf="@+id/textBillCellPhone"
+        app:layout_constraintTop_toBottomOf="@+id/textBillCellPhone" />
+
+    <TextView
+        android:id="@+id/textBillUtilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Utilities"
+        app:layout_constraintStart_toStartOf="@+id/textBillRent"
+        app:layout_constraintTop_toBottomOf="@+id/textBillRent" />
+
+    <TextView
+        android:id="@+id/textBillBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPercentOver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textBillBudget"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="124dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="launchMainActivity"
+        android:text="Return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textMiscPer"
+        app:layout_constraintTop_toBottomOf="@+id/textPercentOver" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
